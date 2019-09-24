@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<widget id="CoverwiseGoogleAnalytics.widget.AdvancedPageTracker" needsEntityContext="true" xmlns="http://www.mendix.com/widget/1.0/">
+  <name>AdvancedPageTracker</name>
+  <description>The advanced page tracker google analytics code.</description>
+  <icon>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+        bWFnZVJlYWR5ccllPAAAAp1JREFUeNp0U99LU2EYfnY8bs61qZs/Bg5GRkwJO5jG8MbAURHURRdC
+        QdA/0I0gdN1tF1H9EUXQYt6EelGSjNAELxR1zunQuaFsS6dHp26u9zl6QsNe+A7f9533fZ/nfZ/3
+        s1Tm5oBCAVhcRCWfh8XjQX55Oajr+kOr1Tq0v7+/0djY+N7p93+Drs/B4QACAaC5GTQVJyfGBk1N
+        0NfXry9MT38qFApdxWIRR0dHqFQq17xe7zvHygpqamp+BTo6novvAhQFKJehGMGtrdBnZp5MTEws
+        ZbPZLkFGfX09BBkSDI+wqqqqwvb29u2f0eg8pqYeE1AuJQGpRKN3xsbGPlZXV6Ourg4Wi4XIAlAG
+        7xjMs8vlMs7RcPgLxse1Uwa7u5iMRN6oqora2lqp6KwkMe7J5vzZIT0gwMrIyGusrUE5iUTub21t
+        3XK73ReCaYrUSUTeM8hMQiabm5v35NOrxmKxfjr9a6RMVqR/fHxsnLmYiKtUKqG4uvpAFYe7rJU/
+        zwcfHh4aTXQ6nRApDTYmg1PRmiDMfQKiXmECM5B7kcugSZRkMvkX2fQ51x+rKhfDwmKIgaRMRP7c
+        2dmhbEYSE900JsvlcggGgzmlra3tO50oH1XY29tDOp1GXqaSvbHb7bDZbBcWlWFvbmjaD9XS1/f1
+        6uzsTCaT6SI9TiAd6HiZEZ3MfD7fEtrbwwo0DTdDoVepVMpoHOs3670smABUJTQw8BI9PTJI0mFJ
+        MtzZ2TnIbrOE/5k8MEMRTdNeoLc3wlFWOY7IZiGD9LalpSWZSCQ+iDx21nj2mIxyiN7Q0PC7u7v7
+        qTR8FBsbkAtJcKoNDg4O4Pf7I/5g0J2fn38Wj8f7JfCRKFOR0sIi66gAfHYFAqW1yUl4KKeo80eA
+        AQA+108un+UF/QAAAABJRU5ErkJggg==
+    </icon>
+    <properties>
+        <property key="attributeList" type="object" isList="true" required="false">
+            <caption>Attributes</caption>
+            <category>Data source</category>
+            <description></description>
+            <properties>
+                <property key="variableName" type="string" required="true">
+                    <caption>Variable name</caption>
+                    <category>Data source</category>
+                    <description>Identifies the attribute value, this name should be used in 'Display string' property.</description>
+                </property>
+                <property key="attr" type="attribute" allowNonPersistableEntities="true" isPath="optional" pathType="reference">
+                    <caption>Attribute</caption>
+                    <category>Data source</category>
+                    <description>Value of this attribute will be used to replace ${your_Variable_Name}, defined in 'Url' property</description>
+                    <attributeTypes>
+                        <attributeType name="AutoNumber"/>
+                        <attributeType name="String" />
+                        <attributeType name="Enum"/>
+                        <attributeType name="Integer"/>
+                        <attributeType name="Float"/>
+                        <attributeType name="Long"/>
+                        <attributeType name="DateTime"/>
+                        <attributeType name="Currency"/>
+                    </attributeTypes>
+                </property>
+            </properties>
+        </property>
+        <property key="metricDimensionList" type="object" isList="true" required="false">
+            <caption>Dimensions</caption>
+            <category>Data source</category>
+            <description>Here you can set Dimensions.</description>
+            <properties>
+                <property key="name" type="string" required="true">
+                    <caption>Name</caption>
+                    <category>Data source</category>
+                    <description>For a Dimension, set the name to 'dimensionX'. The X is a number. Any other name will be ignored</description>
+                </property>
+                <property key="attr" type="attribute" allowNonPersistableEntities="true">
+                    <caption>Attribute</caption>
+                    <category>Data source</category>
+                    <description>A dimension is always a String</description>
+                    <attributeTypes>
+                        <attributeType name="String" />
+                    </attributeTypes>
+                </property>
+            </properties>
+        </property>
+        <property key="trackUrl" type="string" defaultValue="/">
+            <caption>Url</caption>
+            <category>Behavior</category>
+            <description>Url to track</description>
+        </property>
+        <property key="pageTitle" type="string" defaultValue="">
+            <caption>Title</caption>
+            <category>Behavior</category>
+            <description>Title to track</description>
+        </property>
+        <property key="uaTrackCode" type="string" defaultValue="UA-">
+            <caption>UA-XXX-XX</caption>
+            <category>Behavior</category>
+            <description>The UA-XXX-XX code for including google analytics code inside the webpage. NOTE: You DO NOT have to fill this value if you also use the MasterPageTracker widget</description>
+        </property>
+        <property key="trackIt" type="boolean" defaultValue="true">
+            <caption>Active</caption>
+            <category>Behavior</category>
+            <description>Enable/disable tracking</description>
+        </property>
+    </properties>
+</widget>
