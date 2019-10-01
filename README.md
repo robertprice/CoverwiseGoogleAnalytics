@@ -2,6 +2,8 @@
 
 Track pageviews and custom event with Google Analytics. If you have an e-commerce application, you can also use this widget to keep track of your transactions. This adds ecommerce tracking for Coverwise.
 
+This also differs from the standard widget as EventTracker and PageTracker files are renamed to ET.js/.xml and PT.js/.xml so the widgets load and the site still works if UBlock is running in the browser. Analytics data isn't set in this case, but the site won't break as it did before as PageTracker.js and EventTracker.js were blocked by name.
+
 ## Contributing
 
 For more information on contributing to this repository visit [Contributing to a GitHub repository](https://world.mendix.com/display/howto50/Contributing+to+a+GitHub+repository)!

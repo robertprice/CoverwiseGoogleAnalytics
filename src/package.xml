@@ -3,10 +3,10 @@
     <clientModule name="CoverwiseGoogleAnalytics" version="3.3.4" xmlns="http://www.mendix.com/clientModule/1.0/">
         <widgetFiles>
             <widgetFile path="CoverwiseGoogleAnalytics/MasterPageTracker.xml"/>
-            <widgetFile path="CoverwiseGoogleAnalytics/PageTracker.xml"/>
+            <widgetFile path="CoverwiseGoogleAnalytics/PT.xml"/>
             <widgetFile path="CoverwiseGoogleAnalytics/AdvancedPageTracker.xml"/>
             <widgetFile path="CoverwiseGoogleAnalytics/WebmasterTools.xml"/>
-            <widgetFile path="CoverwiseGoogleAnalytics/EventTracker.xml"/>
+            <widgetFile path="CoverwiseGoogleAnalytics/ET.xml"/>
             <widgetFile path="CoverwiseGoogleAnalytics/EventTrackerButton.xml"/>
             <widgetFile path="CoverwiseGoogleAnalytics/EcommerceTracker.xml"/>
         </widgetFiles>
