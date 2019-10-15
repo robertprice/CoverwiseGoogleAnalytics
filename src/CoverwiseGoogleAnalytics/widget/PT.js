@@ -1,4 +1,4 @@
-define("CoverwiseoogleAnalytics/widget/PT", [
+define("CoverwiseGoogleAnalytics/widget/PT", [
     "dojo/_base/declare",
     "CoverwiseGoogleAnalytics/widget/TrackerCore",
     "dojo/_base/lang"
